@@ -1,4 +1,4 @@
-# Data Science Capstone Project - Shinyapp - WOrd Predictor
+# Data Science Capstone Project - Shinyapp - Word Predictor
 Final Data Science Capstone Project - Shinyapp for Word Predictor
 
 This has been a very long and tedious project for me.  I'm a non-programmer.  I come from the program/project management side and continuous improvement.  My interest in data science is to build a complete business model that integrates strategy planning, program management, project management, continuous improvement, analytics, business and MBSE modeling, and change management.  I have developed a business model that focuses on a Center for Innovation that consists of three divisions -- continuous improvement; analytics center of excellence; and modeling.  The objective of such an internal organization is to drive innovative business practices across the enterprise thereby, achieving greater operationing efficiencies and cost reduction, while improving customer service, all of which should help to grow the enterprise in the market place.
@@ -16,3 +16,5 @@ The final project in week 7, is focused more on
 - building the R presentation 
 
 Throughout over 60 hours of working on this project, I have researched and tested many variations of algorithms to see what worked best.  It's been a lot of long and painful hours. I will have to say, I do not feel I was prepared by the training material to take on this type of project.   No examples to really follow to ensure you are at least following a standard process for this kind of coding.  
+
+Now I'm finding it to be very difficult to get the shinyapp.io to process my package.

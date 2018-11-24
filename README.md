@@ -26,12 +26,13 @@ References:
 4. Text Mining Word Relationships, https://uc-r.github.io/word_relationships
 5. Ngram Guide, https://cran.r-project.org/web/packages/ngram/vignettes/ngram-guide.pdf
 6. https://rpubs.com/kadriu/CourseraMilestoneReport
-7. https://github.com/dormantroot/Data-Science/blob/master/Capstone%20Project/PredictWord/predictNextWord.R#L22
-8. https://rpubs.com/CGrantAnderson/Word_Prediction_App
-9. https://rstudio-pubs-static.s3.amazonaws.com/70202_c0880a3c963841d2a945087622e98d4c.html
-10. https://rstudio-pubs-static.s3.amazonaws.com/235238_960d77b8a7ca4339a8ff15478da94dee.html
-11. https://rstudio-pubs-static.s3.amazonaws.com/304141_7cc99677660842599c2a35698adddfa8.html
-12. https://rstudio-pubs-static.s3.amazonaws.com/251401_1a24685af9ed4c2aab6efc25c0c6646f.html
-13. https://rstudio-pubs-static.s3.amazonaws.com/276168_f2fb3b90883641028bee3a20c289126d.html
-14. 
+7. https://github.com/esther3587/Data-Science-Capstone
+8. https://github.com/dormantroot/Data-Science/blob/master/Capstone%20Project/PredictWord/predictNextWord.R#L22
+9. https://rpubs.com/CGrantAnderson/Word_Prediction_App
+10. https://rstudio-pubs-static.s3.amazonaws.com/70202_c0880a3c963841d2a945087622e98d4c.html
+11. https://rstudio-pubs-static.s3.amazonaws.com/235238_960d77b8a7ca4339a8ff15478da94dee.html
+12. https://rstudio-pubs-static.s3.amazonaws.com/304141_7cc99677660842599c2a35698adddfa8.html
+13. https://rstudio-pubs-static.s3.amazonaws.com/251401_1a24685af9ed4c2aab6efc25c0c6646f.html
+14. https://rstudio-pubs-static.s3.amazonaws.com/276168_f2fb3b90883641028bee3a20c289126d.html
+15. https://github.com/sidsriv/Data-Science-capstone
 

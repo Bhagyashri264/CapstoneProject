@@ -17,7 +17,7 @@ The final project in week 7, is focused more on
 
 Throughout over 60 hours of working on this project, I have researched and tested many variations of algorithms to see what worked best.  It's been a lot of long and painful hours. I will have to say, I do not feel I was prepared by the training material to take on this type of project.   No examples to really follow to ensure you are at least following a standard process for this kind of coding.  
 
-Now I'm finding it to be very difficult to get the shinyapp.io to process my package.
+Now that I have a working project, I'm having difficulty getting Shinapp.io to work.  I'm keep getting a "swirl" message error which has nothing to do with my project file.  I experienced this when I deployed my first app on shinyapp, then it started working.
 
 References:  
 1. Rstudio, https://shiny.rstudio.com/articles/layout-guide.html

@@ -1,5 +1,16 @@
 #Word Predictor file
-setwd("C:/Users/tljon/datasciencecoursera/DSFinalProject")
+library(dplyr)
+library(data.table)
+library(qdap)
+library(ngram)
+library(tm)
+library(RWeka)
+library(stringr)
+library(stringi)
+library(NLP)
+library(wordcloud)
+library(ggplot2)
+#setwd("C:/Users/tljon/datasciencecoursera/FinalProject")
 
 load("unigram.Rda")
 load("bigram.Rda")
@@ -7,7 +18,7 @@ load("trigram.Rda")
 load("quadgram.Rda")
 
 wordpred <- function(sentence){
-    value = "next word is..."
+    value = "push the submit button"
     sen = unlist(strsplit(sentence,' '))
     if(length(sen)>=3){value = quadgram(sen[(length(sen)-2):length(sen)])
     }
@@ -16,7 +27,7 @@ wordpred <- function(sentence){
     }
     if(is.null(value)||length(sen)==1){value = bigram(sen[length(sen)])
     }
-    if(is.null(value)){value = "the"}
+    if(is.null(value)){value = "the"} #default value
     
     return(value)
 }
@@ -24,13 +35,13 @@ wordpred <- function(sentence){
 quadgram <- function(fourg){
     four <- paste(fourg,collapse = ' ')
     foursum <- data.frame(quadgram="test",frequency=0)
-    k <- trigramlist[trigram==four]
-    m <- as.numeric(k$frequency)
+    l <- t_list[trigram==four]
+    m <- as.numeric(l$frequency)
     if(length(m)==0) return(NULL)
     
     for(string0 in unigramlist$unigram){
         text = paste(four,string0)
-        found <- quadgramlist[quadgram==text]
+        found <- q_list[quadgram==text]
         n<- as.numeric(found$frequency)
         
         if(length(n)!=0){
@@ -47,13 +58,13 @@ quadgram <- function(fourg){
 trigram <- function(threeg){
     three <- paste(threeg,collapse = ' ')
     threesum <- data.frame(trigram="test",frequency=0)
-    k <- bigramlist[bigram==three]
-    m <- as.numeric(k$frequency)
+    l <- b_list[bigram==three]
+    m <- as.numeric(l$frequency)
     if(length(m)==0) return(NULL)
     
-    for(string0 in unigramlist$unigram){
+    for(string0 in u_list$unigram){
         text = paste(three,string0)
-        found <- trigramlist[trigram==text]
+        found <- t_list[trigram==text]
         n<- as.numeric(found$frequency)
         
         if(length(n)!=0){
@@ -69,13 +80,13 @@ trigram <- function(threeg){
 bigram <- function(twog){
     two <- paste(twog,collapse = ' ')
     twosum <- data.frame(bigram="test",frequency=0)
-    k <- unigramlist[unigram==two]
-    m <- as.numeric(k$frequency)
+    l <- u_list[unigram==two]
+    m <- as.numeric(l$frequency)
     if(length(m)==0) return(NULL)
     
-    for(string0 in unigramlist$unigram){
+    for(string0 in u_list$unigram){
         text = paste(two,string0)
-        found <- bigramlist[bigram==text]
+        found <- b_list[bigram==text]
         n<- as.numeric(found$frequency)
         
         if(length(n)!=0){
